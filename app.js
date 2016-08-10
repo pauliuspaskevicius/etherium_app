@@ -1,9 +1,9 @@
 var items  = [];
 
 $(document).ready(function(){
-  $.ajax('data.json').done(function(response){
-    console.log(response);
-    //renderList (items);
+  $.ajax('data.json').done(function(data){
+    console.log(data);
+    renderList (data);
   });
 });
 
